@@ -15,7 +15,7 @@ const grantType    = 'client_credentials'
 const scope         = 'CURRENTLY NOT USED.';
 
 // The Axios library is used to retrieve information from the API.
-// methor   - The method you want to use.
+// method   - The method you want to use.
 // url      - The link to the API.
 // data     - The data which contains informations that you want to send to the API.
 axios({
@@ -27,7 +27,7 @@ axios({
         grant_type: grantType
     },                       
 }).then(authData => {
-
+    
     // Collected data from the API
     // "token_type": "Bearer",
     // "expires_in": 31536000,
