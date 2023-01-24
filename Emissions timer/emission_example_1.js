@@ -10,7 +10,7 @@ const linkToApi   = `https://dapi.stalcraft.net/{region}/emission`;
 const TOKEN         = `YOUR_TOKEN`;
 
 // The Axios library is used to retrieve information from the API.
-// methor   - The method you want to use.
+// method   - The method you want to use.
 // url      - Link to the API.
 // headers  - The header contains your authorization token to pass it to the API.
 axios({
