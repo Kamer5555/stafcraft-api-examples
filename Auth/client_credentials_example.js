@@ -12,19 +12,20 @@ const linkToApi   = 'https://exbo.net/oauth/token';
 const clientId     = 'YOUR_CLIENT_ID';
 const clientSecret = 'YOUR_CLIENT_SECRET'
 const grantType    = 'client_credentials'
-const scope         = 'CURRENTLY NOT USED.';
+const scope         = null;
 
 // The Axios library is used to retrieve information from the API.
 // method   - The method you want to use.
 // url      - The link to the API.
 // data     - The data which contains informations that you want to send to the API.
 axios({
-    method: 'get',                          
+    method: 'post',                          
     url: linkToApi,
     data: {
         client_id: clientId,
         client_secret: clientSecret,
-        grant_type: grantType
+        grant_type: grantType,
+		scope: scope
     },                       
 }).then(authData => {
     
